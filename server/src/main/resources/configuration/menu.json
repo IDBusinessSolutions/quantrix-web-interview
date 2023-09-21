@@ -1,0 +1,43 @@
+{
+  "sections": [
+    {
+      "title": "Appetizers",
+      "items": [
+        {
+          "name": "Mozzarella sticks"
+        },
+        {
+          "name": "Chicken wings"
+        }
+      ]
+    },
+    {
+      "title": "Entrees",
+      "items": [
+        {
+          "name": "Pizza"
+        },
+        {
+          "name": "BBQ Chicken"
+        },
+        {
+          "name": "Cheese quesadilla"
+        },
+        {
+          "name": "Fish and Chips"
+        }
+      ]
+    },
+    {
+      "title": "Desserts",
+      "items": [
+        {
+          "name": "Chocolate mousse"
+        },
+        {
+          "name": "Bread pudding"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+name: "quantrix-interview-app"
+services:
+  server:
+    build:
+      context: "./server"
+      dockerfile: "dev.Dockerfile"
+    ports:
+      - "8080:8080" # HTTP
+      - "8000:8000" # Java Debugging
+  client:
+    build:
+      context: "./client"
+      dockerfile: "dev.Dockerfile"
+    ports:
+      - "80:3000"
+      - "3000:3000"
+    volumes:
+      - "./client/src:/root/src"
+      - "./client:/host"
+      - "/root/node_modules"
+    command: "bash -c 'cp -rfu /root/node_modules/. /host/node_modules/ && npm run start'"
